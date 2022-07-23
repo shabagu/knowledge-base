@@ -5,11 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>123</title>
+    <title>selflearn (php)</title>
 </head>
 <body>
-    <?= "Hello, world #0! <br>"; ?>
-    <?php echo("Hello, world #1! <br>"); ?>
-    <?php echo "Hello, world #2! <br>"; ?>
+<?php
+    echo "<h1>Hello there!</h1>";
+    echo "<hr>";
+    echo "<p>I'm new to php</p>";
+?>
+
 </body>
 </html>
