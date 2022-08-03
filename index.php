@@ -9,16 +9,29 @@
 </head>
 <body>
 <?php
-    $characterName = "Tom";
-    $characterAge = 45;
-    echo "There once was a man named $characterName <br>";
-    echo "He was $characterAge years old <br>";
+    $stringVar = "My name is Jeff";
+    $integerVar = 123;
+    $floatVar = 10.5;
+    $booleanVar = true;
+    $nullVar = null;
 
-    $characterName = "John";
-    $characterAge = 60;
-    echo "He really liked the name $characterName <br>";
-    echo "But didn't like being $characterAge <br>";
+    // $array
+    // $object
+    // $resource
+
 ?>
+
+<h1>PHP data types</h1>
+<ol>
+    <li>String</li>
+    <li>Integer</li>
+    <li>Float (double)</li>
+    <li>Boolean</li>
+    <li>Null</li>
+    <li>Array</li>
+    <li>Object</li>
+    <li>Resource</li>
+</ol>
 
 </body>
 </html>
