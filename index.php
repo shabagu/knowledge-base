@@ -8,15 +8,22 @@
     <title>selflearn (php)</title>
 </head>
 <body>
-
 <form action="index.php" method="get">
-    Number #1: <input type="number" name="number1">
-    Number #2: <input type="number" name="number2">
+    Color:<br><input type="text" name="color"><br>
+    Plural noun:<br><input type="text" name="noun"><br>
+    Verb:<br><input type="text" name="verb"><br>
     <input type="submit">
 </form>
-<?php
-    $result = $_GET["number1"] + $_GET["number2"]
-?>
-Result is <?= $result; ?>
+
+    <?php
+    $color = $_GET["color"];
+    $noun = $_GET["noun"];
+    $verb = $_GET["verb"];
+
+    echo "roses are $color" . "<br>";
+    echo "$noun are blue" . "<br>";
+    echo "I $verb you" . "<br>";
+    ?>
+
 </body>
 </html>
