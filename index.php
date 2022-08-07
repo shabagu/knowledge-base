@@ -9,29 +9,27 @@
 </head>
 <body>
 <?php
-    $stringVar = "My name is Jeff";
-    $integerVar = 123;
-    $floatVar = 10.5;
-    $booleanVar = true;
-    $nullVar = null;
+    $string = "Hello, World!";
+    echo $string . "<br><br>";
+    echo strtolower($string) . "<br>";
+    echo strtoupper($string) . "<br>";
+    echo strlen($string) . "<br>";
+    echo $string[12] . "<br>";
+    echo "123"[0] . "<br><br>";
 
-    // $array
-    // $object
-    // $resource
+    $string[0] = "B";
+    echo $string . "<br>";
+    $string[12] = "?";
+    echo $string . "<br>";
+
+    echo str_replace("Bello", "Goodbye", $string) . "<br>";
+    echo str_replace("l", "!_", $string) . "<br>";
+
+    echo substr($string, 0, 4)  . "<br>";
+    echo substr($string, 12, 1) . "<br>";
+
 
 ?>
-
-<h1>PHP data types</h1>
-<ol>
-    <li>String</li>
-    <li>Integer</li>
-    <li>Float (double)</li>
-    <li>Boolean</li>
-    <li>Null</li>
-    <li>Array</li>
-    <li>Object</li>
-    <li>Resource</li>
-</ol>
 
 </body>
 </html>
