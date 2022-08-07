@@ -9,21 +9,12 @@
 </head>
 <body>
 <form action="index.php" method="get">
-    Color:<br><input type="text" name="color"><br>
-    Plural noun:<br><input type="text" name="noun"><br>
-    Verb:<br><input type="text" name="verb"><br>
-    <input type="submit">
+    Name: <input type="text" name="name">
+    <input type="submit"><br><br>
 </form>
-
-    <?php
-    $color = $_GET["color"];
-    $noun = $_GET["noun"];
-    $verb = $_GET["verb"];
-
-    echo "roses are $color" . "<br>";
-    echo "$noun are blue" . "<br>";
-    echo "I $verb you" . "<br>";
-    ?>
-
+<?php
+    echo "Name: " . @$_GET["name"] . "<br>";
+    echo "Age: " . @$_GET["age"] . "<br>";
+?>
 </body>
 </html>
