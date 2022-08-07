@@ -10,14 +10,13 @@
 <body>
 
 <form action="index.php" method="get">
-    Username:<br>
-    <input type="text" name="username"><br>
-    Age:<br>
-    <input type="number" name="age"><br>
+    Number #1: <input type="number" name="number1">
+    Number #2: <input type="number" name="number2">
     <input type="submit">
 </form>
-Your username is <?php echo $_GET["username"]; ?> <br>
-Your age is <?php echo $_GET["age"]; ?>
-
+<?php
+    $result = $_GET["number1"] + $_GET["number2"]
+?>
+Result is <?= $result; ?>
 </body>
 </html>
