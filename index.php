@@ -9,24 +9,41 @@
 </head>
 <body>
 <?php
-    $string = "Hello, World!";
-    echo $string . "<br><br>";
-    echo strtolower($string) . "<br>";
-    echo strtoupper($string) . "<br>";
-    echo strlen($string) . "<br>";
-    echo $string[12] . "<br>";
-    echo "123"[0] . "<br><br>";
+    echo 10 . "<br>";
+    echo -301.123 . "<br>";
+    echo 2 * 2 . "<br>";
+    echo 2 / 5 . "<br>";
+    echo 10 % 3 . "<br>";
+    echo 2 + 2 * 2 . "<br>";
+    echo (2 + 2) * 2 . "<br>";
 
-    $string[0] = "B";
-    echo $string . "<br>";
-    $string[12] = "?";
-    echo $string . "<br>";
+    $number = 1;
+    $number++;
+    echo $number . "<br>";
+    $number--;
+    echo $number . "<br>";
+    $number = $number + 100;
+    echo $number . "<br>";
+    $number += 100;
+    echo $number . "<br>";
+    $number %= 99;
+    echo $number . "<br>";
 
-    echo str_replace("Bello", "Goodbye", $string) . "<br>";
-    echo str_replace("l", "!_", $string) . "<br>";
+    echo abs(-100) . "<br>";
+    echo pow(2, 4) . "<br>";
+    echo sqrt(1024) . "<br>";
+    echo max(5, 10, -19, 40) . "<br>";
+    echo min(5, 10, -19, 40) . "<br>";
+    echo round(25.3) . "<br>";
+    echo ceil(9.01) . "<br>";
+    echo floor(12.9) . "<br>";
+    $a = 4;
+    $b = 5;
+    $c = $a . $b;
+    echo $c . "<br>";
 
-    echo substr($string, 0, 4)  . "<br>";
-    echo substr($string, 12, 1) . "<br>";
+
+
 
 
 ?>
