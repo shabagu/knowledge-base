@@ -8,13 +8,19 @@
     <title>selflearn (php)</title>
 </head>
 <body>
-<form action="index.php" method="get">
-    Name: <input type="text" name="name">
-    <input type="submit"><br><br>
+<!--<form action="index.php" method="get">-->
+<!--    Password:-->
+<!--    <input type="password" name="password">-->
+<!--    <input type="submit">-->
+<!--</form>-->
+<form action="index.php" method="post">
+    Password:
+    <input type="password" name="password">
+    <input type="submit">
 </form>
 <?php
-    echo "Name: " . @$_GET["name"] . "<br>";
-    echo "Age: " . @$_GET["age"] . "<br>";
+//    echo @$_GET["password"];
+    echo @$_POST["password"];
 ?>
 </body>
 </html>
