@@ -8,42 +8,18 @@
     <title>selflearn (php)</title>
 </head>
 <body>
+<p>Сделайте ваш заказ!</p>
+<form action="" method="post">
+    Бургер: <input type="checkbox" name="items[]" value="burger"><br>
+    Картошка фри: <input type="checkbox" name="items[]" value="fries"><br>
+    Кола: <input type="checkbox" name="items[]" value="coke"><br>
 
+    <hr>
+    <input type="submit">
+</form>
 <?php
-    # Объявление массивов
-//    $friends = array("Димас", "Игорь", "Владос", "Колюпаха");
-    $friends = ["Димас", "Игорь", "Владос", "Колюпаха", 1, false];
-    $fish = ["new"=>"yellow", "old"=>"green", "river"=>"grey"];
-
+    $items = $_POST["items"];
 ?>
-    <pre><?php
-    # Вывод массива через функцию var_dump()
-    var_dump($friends);
-
-    # Вывод элемента массива по индексу
-    echo $friends[1];
-    echo "<br><br>";
-
-    # Добавление/удаление элементов массива
-    $friends[6] = "Каркасы";
-    unset($friends[2]);
-    $friends[100] = "Олег";
-
-    var_dump($friends);
-    echo "<br>";
-
-    # Вывод ассоциативного массива
-    var_dump($fish);
-    echo "<br>";
-    echo $fish["river"] . "<br>";
-
-    $fish["river"] = "nice"; // Изменение элемента массива
-    echo $fish["river"][0] . "<br><br>"; // Вывод символа строки по индексу
-
-    # Расчёт количества элементов массива
-    echo "Количество элементов массива \$fish - " . count($fish);
-
-    ?></pre>
-
+<pre><?php var_dump($items); ?></pre>
 </body>
 </html>
