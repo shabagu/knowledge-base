@@ -15,7 +15,7 @@
     Кола: <input type="checkbox" name="items[]" value="coke"><br>
 
     <hr>
-    <input type="submit">
+    <input type="submit" value="Заказать">
 </form>
 <?php
     $items = @$_POST["items"];
