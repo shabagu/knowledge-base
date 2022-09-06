@@ -50,6 +50,8 @@ h3 {
 
 section.list h3 {
     color: #fff;
+    text-align: left;
+    margin-left: 70px;
 }
 
 section.code h3 {
@@ -76,7 +78,7 @@ section.list .source-link {
     font-weight: bold;
 }
 
-section.description a, section.description a:visited {
+section.description a, section.description a:visited, section.result a, section.result a:visited {
     color: blue;
     text-decoration: underline;
 }
@@ -123,6 +125,15 @@ span.grey {
 }
 span.yellow {
     color: #d6be64;
+}
+span.purple {
+    color: #8b759c;
+}
+span.blue {
+    color: #5489b7;
+}
+span.darkgrey {
+    color: #757f76;
 }
 
 .result-output {
