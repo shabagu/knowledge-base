@@ -9,23 +9,13 @@
 </head>
 <body>
 <?php
-$prices = ["burger"=>120, "fries"=>60, "coke"=>90, "nuggets"=>100];
+    function hello($name, $age) {
+        echo "Hello, $name! You are $age)))<br>";
+    }
 
-echo "Кока-кола стоит $" . $prices["coke"] . "<br>";
-echo "Количество позиций в меню: " . count($prices);
-?>
-<hr>
-<form action="" method="post">
-    <input type="text" name="item" value=<?= $_POST["item"]?>>
-    <input type="submit" value="Отправить данные">
-</form>
-<?php
-$selected = $_POST["item"];
-if (array_key_exists($selected, $prices)) {
-    echo "Цена выбранного товара - $" . $prices[$selected];
-} else {
-    echo "Товар не найден!";
-}
+    hello("Stas", "23");
+    hello("Ivan", "35");
+    hello("Oleg", "17");
 ?>
 </body>
 </html>
