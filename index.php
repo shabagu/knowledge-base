@@ -11,7 +11,7 @@
 <?php
 $prices = ["burger"=>120, "fries"=>60, "coke"=>90, "nuggets"=>100];
 
-echo "Кока-кола фри стоит $" . $prices["coke"] . "<br>";
+echo "Кока-кола стоит $" . $prices["coke"] . "<br>";
 echo "Количество позиций в меню: " . count($prices);
 ?>
 <hr>
@@ -22,7 +22,7 @@ echo "Количество позиций в меню: " . count($prices);
 <?php
 $selected = $_POST["item"];
 if (array_key_exists($selected, $prices)) {
-    echo "Цена выбранного товара - $" . $prices[$_POST["item"]];
+    echo "Цена выбранного товара - $" . $prices[$selected];
 } else {
     echo "Товар не найден!";
 }
