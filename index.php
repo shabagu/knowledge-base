@@ -8,18 +8,24 @@
     <title>selflearn (php)</title>
 </head>
 <body>
-<p>Сделайте ваш заказ!</p>
-<form action="" method="post">
-    Бургер: <input type="checkbox" name="items[]" value="burger"><br>
-    Картошка фри: <input type="checkbox" name="items[]" value="fries"><br>
-    Кола: <input type="checkbox" name="items[]" value="coke"><br>
+<?php
+$prices = ["burger"=>120, "fries"=>60, "coke"=>90, "nuggets"=>100];
 
-    <hr>
-    <input type="submit" value="Заказать">
+echo "Кока-кола фри стоит $" . $prices["coke"] . "<br>";
+echo "Количество позиций в меню: " . count($prices);
+?>
+<hr>
+<form action="" method="post">
+    <input type="text" name="item" value=<?= $_POST["item"]?>>
+    <input type="submit" value="Отправить данные">
 </form>
 <?php
-    $items = @$_POST["items"];
+$selected = $_POST["item"];
+if (array_key_exists($selected, $prices)) {
+    echo "Цена выбранного товара - $" . $prices[$_POST["item"]];
+} else {
+    echo "Товар не найден!";
+}
 ?>
-<pre><?php var_dump($items); ?></pre>
 </body>
 </html>

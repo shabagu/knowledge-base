@@ -20,7 +20,7 @@ Course lessons:
 14. ✅ (1:35:52) POST vs GET
 15. ✅ (1:41:44) Arrays
 16. ✅ (1:50:26) Using Checkboxes
-17. ❌ (1:57:22) Associative Arrays
+17. ✅ (1:57:22) Associative Arrays
 18. ❌ (2:04:55) Functions
 19. ❌ (2:12:10) Return Statements
 20. ❌ (2:19:10) If Statements
