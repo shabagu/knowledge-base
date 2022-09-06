@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: #808486;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+
+section.list {
+    width: 20%;
+    height: 100%;
+    min-height: 100%;
+    background: #676a6d;
+
+}
+
+section.code {
+    width: calc(40% + 20px);
+    min-height: 100%;
+    background: #2b2b2b;
+    padding: 20px;
+}
+
+section.result {
+    width: 40%;
+    min-height: 100%;
+    padding: 20px;
+}
+
+section.description {
+    width: calc(80% - 40px);
+    padding-left: 40px;
+}
+
+h3 {
+    text-align: center;
+}
+
+section.list h3 {
+    color: #fff;
+}
+
+section.code h3 {
+    color: #fff;
+}
+
+section.result h3 {
+    color: #000;
+}
+
+section.description h3 {
+    text-align: left;
+}
+
+section.list ol, section.list a {
+    color: #fff;
+    text-decoration: none;
+}
+section.list a:hover {
+    color: #85acfd;
+}
+section.list .source-link {
+    margin: 13px;
+    font-weight: bold;
+}
+
+section.description a, section.description a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+.highlighted > li {
+    width: fit-content;
+    background: rgba(173, 255, 47, 0.53);
+}
+
+ul li {
+    padding-left: 12px;
+}
+
+ul li::marker  {
+    content: "→";
+}
+
+
+span.console {
+    font-family: monospace;
+    background: #000;
+    color: lime;
+}
+span.note {
+    font-style: italic;
+}
+
+pre.php {
+    background: #232525;
+    padding: 20px;
+    width: 25%;
+}
+span.orange {
+    color: #cc7832;
+}
+span.green {
+    color: #698245;
+}
+span.other {
+    color: #e45dff;
+}
+span.grey {
+    color: #a2abb0;
+}
+span.yellow {
+    color: #d6be64;
+}
+
+.result-output {
+    font-family: "Times New Roman", serif;
+}
