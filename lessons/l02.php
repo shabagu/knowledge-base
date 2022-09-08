@@ -16,7 +16,7 @@
         <h3>Список уроков</h3>
         <ol>
             <li><a href="l01.php">Introduction</a></li>
-            <li><a href="l02.php">Windows Installation</a></li>
+            <li class="selected"><a href="l02.php">Windows Installation</a></li>
             <li><a href="l03.php">Choosing a Text Editor</a></li>
             <li><a href="l04.php">Hello World & Setup</a></li>
             <li><a href="l05.php">Writing HTML</a></li>

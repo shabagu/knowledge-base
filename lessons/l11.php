@@ -25,7 +25,7 @@
             <li><a href="l08.php">Working With Strings</a></li>
             <li><a href="l09.php">Working With Numbers</a></li>
             <li><a href="l10.php">Getting User Input</a></li>
-            <li><a href="l11.php">Building a Basic Calculator</a></li>
+            <li class="selected"><a href="l11.php">Building a Basic Calculator</a></li>
             <li><a href="l12.php">Building a Mad Libs Game</a></li>
             <li><a href="l13.php">URL Parameters</a></li>
             <li><a href="l14.php">POST vs GET</a></li>
@@ -54,10 +54,28 @@
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>Building a Basic Calculator</h3>
+<pre>
+<span class="yellow">&lt;form <span class="grey">action=<span class="lightgreen">"l11.php"</span> method=<span class="lightgreen">"get"</span></span>&gt;</span>
+    <span class="grey">Number #1: <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"number"</span> name=<span class="lightgreen">"number1"</span></span><span class="yellow">&gt;&lt;br&gt;</span></span></span>
+    <span class="grey">Number #2: <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"number"</span> name=<span class="lightgreen">"number2"</span></span><span class="yellow">&gt;&lt;br&gt;</span></span></span>
+    <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
+<span class="yellow">&lt;/form&gt;</span>
+<span class="orange">&lt;?php <span class="purple">$result<span class="grey"> = </span>$_GET<span class="grey">[<span class="green">"number1</span>] + </span>$_GET<span class="grey">[<span class="green">"number2"</span>]</span></span> ?&gt;</span>
+<span class="grey">Result is <span class="orange">&lt;?= <span class="purple">$result</span>; ?&gt;</span></span>
+</pre>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+            <form action="l11.php" method="get">
+                Number #1: <input type="number" name="number1"><br>
+                Number #2: <input type="number" name="number2"><br>
+                <input type="submit">
+            </form>
+            <?php $result = $_GET["number1"] + $_GET["number2"] ?>
+            Result is <?= $result; ?>
+        </div>
     </section>
 </main>
 </body>

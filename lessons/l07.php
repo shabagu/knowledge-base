@@ -21,7 +21,7 @@
             <li><a href="l04.php">Hello World & Setup</a></li>
             <li><a href="l05.php">Writing HTML</a></li>
             <li><a href="l06.php">Variables</a></li>
-            <li><a href="l07.php">Data Types</a></li>
+            <li class="selected"><a href="l07.php">Data Types</a></li>
             <li><a href="l08.php">Working With Strings</a></li>
             <li><a href="l09.php">Working With Numbers</a></li>
             <li><a href="l10.php">Getting User Input</a></li>
@@ -74,7 +74,6 @@
     <span class="darkgrey">// iterable</span>
     <span class="darkgrey">// callable</span>
 <span class="orange">?&gt;</span>
-
 </pre>
     </section>
     <section class="result">

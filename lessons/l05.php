@@ -19,7 +19,7 @@
             <li><a href="l02.php">Windows Installation</a></li>
             <li><a href="l03.php">Choosing a Text Editor</a></li>
             <li><a href="l04.php">Hello World & Setup</a></li>
-            <li><a href="l05.php">Writing HTML</a></li>
+            <li class="selected"><a href="l05.php">Writing HTML</a></li>
             <li><a href="l06.php">Variables</a></li>
             <li><a href="l07.php">Data Types</a></li>
             <li><a href="l08.php">Working With Strings</a></li>
@@ -57,17 +57,17 @@
         <h3>HTML</h3>
 <pre>
 <span class="yellow">&lt;!doctype <span class="grey">html</span>&gt;</span>
-<span class="yellow">&lt;html <span class="grey">lang<span class="green">="ru"</span></span>&gt;</span>
+<span class="yellow">&lt;html <span class="grey">lang<span class="lightgreen">="ru"</span></span>&gt;</span>
 <span class="yellow">&lt;head&gt;</span>
-    <span class="yellow">&lt;meta <span class="grey">charset<span class="green">="UTF-8"</span></span>&gt;</span>
-    <span class="yellow">&lt;meta <span class="grey">name<span class="green">="viewport"</span></span>
-    <span class="grey">content<span class="green">="width=device-width, user-scalable=no, initial-scale=1.0,
+    <span class="yellow">&lt;meta <span class="grey">charset<span class="lightgreen">="UTF-8"</span></span>&gt;</span>
+    <span class="yellow">&lt;meta <span class="grey">name<span class="lightgreen">="viewport"</span></span>
+    <span class="grey">content<span class="lightgreen">="width=device-width, user-scalable=no, initial-scale=1.0,
              maximum-scale=1.0, minimum-scale=1.0"</span></span></span>
-    <span class="yellow">&lt;meta <span class="grey">http-equiv<span class="green">="X-UA-Compatible"</span></span> <span class="grey">content<span class="green">="ie=edge"</span></span>&gt;</span>
+    <span class="yellow">&lt;meta <span class="grey">http-equiv<span class="lightgreen">="X-UA-Compatible"</span></span> <span class="grey">content<span class="lightgreen">="ie=edge"</span></span>&gt;</span>
     <span class="yellow">&lt;title&gt;<span class="grey">My Web Page</span>&lt;/title&gt;</span>
-    <span class="yellow">&lt;link <span class="grey">rel<span class="green">="stylesheet"</span></span><span class="grey"> href<span class="green">="index.css"</span></span>&gt;</span>
-    <span class="yellow">&lt;link <span class="grey">rel<span class="green">="icon"</span></span><span class="grey"> href<span class="green">="favicon.svg"</span></span>&gt;</span>
-    <span class="yellow">&lt;script <span class="grey">src<span class="green">="script.js"</span> defer</span>&gt;&lt;/script&gt;</span>
+    <span class="yellow">&lt;link <span class="grey">rel<span class="lightgreen">="stylesheet"</span></span><span class="grey"> href<span class="lightgreen">="index.css"</span></span>&gt;</span>
+    <span class="yellow">&lt;link <span class="grey">rel<span class="lightgreen">="icon"</span></span><span class="grey"> href<span class="lightgreen">="favicon.svg"</span></span>&gt;</span>
+    <span class="yellow">&lt;script <span class="grey">src<span class="lightgreen">="script.js"</span> defer</span>&gt;&lt;/script&gt;</span>
 <span class="yellow">&lt;/head&gt;</span>
 <span class="yellow">&lt;body&gt;</span>
     <span class="orange">&lt;?php echo <span class="green">"<span class="grey">Hello,world! <span class="yellow">&lt;br&gt;</span></span>"</span>; ?&gt;</span>

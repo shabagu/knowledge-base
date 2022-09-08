@@ -20,7 +20,7 @@
             <li><a href="l03.php">Choosing a Text Editor</a></li>
             <li><a href="l04.php">Hello World & Setup</a></li>
             <li><a href="l05.php">Writing HTML</a></li>
-            <li><a href="l06.php">Variables</a></li>
+            <li class="selected"><a href="l06.php">Variables</a></li>
             <li><a href="l07.php">Data Types</a></li>
             <li><a href="l08.php">Working With Strings</a></li>
             <li><a href="l09.php">Working With Numbers</a></li>
@@ -71,17 +71,19 @@
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
-        <?php
-            $characterName = "Tom";
-            $characterAge = 45;
-            echo "There once was a man named $characterName <br>";
-            echo "He was $characterAge years old <br>";
+        <div class="result-output">
+            <?php
+                $characterName = "Tom";
+                $characterAge = 45;
+                echo "There once was a man named $characterName <br>";
+                echo "He was $characterAge years old <br>";
 
-            $characterName = "John";
-            $characterAge = 60;
-            echo "He really liked the name $characterName <br>";
-            echo "But didn't like being $characterAge <br>";
-        ?>
+                $characterName = "John";
+                $characterAge = 60;
+                echo "He really liked the name $characterName <br>";
+                echo "But didn't like being $characterAge <br>";
+            ?>
+        </div>
     </section>
 </main>
 </body>

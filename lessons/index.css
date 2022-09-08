@@ -70,9 +70,19 @@ section.list ol, section.list a {
     color: #fff;
     text-decoration: none;
 }
-section.list a:hover {
-    color: #85acfd;
+
+section.list li:hover {
+    color: #92c0fd;
 }
+section.list li:hover a {
+    color: inherit;
+}
+
+section.list li.selected, section.list li.selected a {
+    color: #6baaff;
+    font-size: 1.1em;
+}
+
 section.list .source-link {
     margin: 13px;
     font-weight: bold;
@@ -96,7 +106,6 @@ ul li::marker  {
     content: "→";
 }
 
-
 span.console {
     font-family: monospace;
     background: #000;
@@ -116,6 +125,9 @@ span.orange {
 }
 span.green {
     color: #698245;
+}
+span.lightgreen {
+    color: #97c15b;
 }
 span.other {
     color: #e45dff;
