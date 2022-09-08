@@ -35,7 +35,7 @@ section.code {
 }
 
 section.result {
-    width: 40%;
+    width: calc(40% - 64px);
     min-height: calc(100vh - 80px);
     padding: 20px;
 }
