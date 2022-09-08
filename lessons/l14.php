@@ -28,7 +28,7 @@
             <li><a href="l11.php">Building a Basic Calculator</a></li>
             <li><a href="l12.php">Building a Mad Libs Game</a></li>
             <li><a href="l13.php">URL Parameters</a></li>
-            <li><a href="l14.php">POST vs GET</a></li>
+            <li class="selected"><a href="l14.php">POST vs GET</a></li>
             <li><a href="l15.php">Arrays</a></li>
             <li><a href="l16.php">Using Checkboxes</a></li>
             <li><a href="l17.php">Associative Arrays</a></li>
@@ -60,6 +60,7 @@
 <span class="darkgrey">&lt!--     Password: &lt;input type="password" name="password"&gt; --&gt;</span>
 <span class="darkgrey">&lt!--     &lt;input type="submit"&gt; --&gt;</span>
 <span class="darkgrey">&lt!-- &lt;/form&gt; --&gt;</span>
+
 <span class="yellow">&lt;form <span class="grey">action= <span class="lightgreen">"l14.php"</span> method= <span class="lightgreen">"post"</span></span>&gt;</span>
     <span class="grey">Password: <span class="yellow">&lt;input</span> type=<span class="lightgreen">"password"</span> name=<span class="lightgreen">"password"</span></span><span class="yellow">&gt;</span>
     <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
@@ -78,6 +79,7 @@
             <!--    Password: <input type="password" name="password">-->
             <!--    <input type="submit">-->
             <!--</form>-->
+
             <form action="l14.php" method="post">
                 Password: <input type="password" name="password">
                 <input type="submit">

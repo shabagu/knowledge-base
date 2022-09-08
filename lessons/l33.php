@@ -47,17 +47,20 @@
             <li><a href="l30.php">Constructors</a></li>
             <li><a href="l31.php">Object Functions</a></li>
             <li><a href="l32.php">Getters & Setters</a></li>
-            <li><a href="l33.php">Inheritance</a></li>
+            <li class="selected"><a href="l33.php">Inheritance</a></li>
         </ol>
         <div class="source-link">
             <a href="https://www.youtube.com/watch?v=OK_JCtrrv-c" target="_blank">* Видео-источник</a>
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>Inheritance</h3>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+
+        </div>
     </section>
 </main>
 </body>

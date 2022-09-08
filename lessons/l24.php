@@ -38,7 +38,7 @@
             <li><a href="l21.php">If Statements (con't)</a></li>
             <li><a href="l22.php">Building a Better Calculator</a></li>
             <li><a href="l23.php">Switch Statements</a></li>
-            <li><a href="l24.php">While Loops</a></li>
+            <li class="selected"><a href="l24.php">While Loops</a></li>
             <li><a href="l25.php">For Loops</a></li>
             <li><a href="l26.php">Comments</a></li>
             <li><a href="l27.php">Including HTML</a></li>
@@ -54,10 +54,13 @@
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>While Loops</h3>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+
+        </div>
     </section>
 </main>
 </body>

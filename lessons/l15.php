@@ -29,7 +29,7 @@
             <li><a href="l12.php">Building a Mad Libs Game</a></li>
             <li><a href="l13.php">URL Parameters</a></li>
             <li><a href="l14.php">POST vs GET</a></li>
-            <li><a href="l15.php">Arrays</a></li>
+            <li class="selected"><a href="l15.php">Arrays</a></li>
             <li><a href="l16.php">Using Checkboxes</a></li>
             <li><a href="l17.php">Associative Arrays</a></li>
             <li><a href="l18.php">Functions</a></li>
@@ -54,10 +54,47 @@
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>Arrays</h3>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+            <?php
+            # Объявление массивов
+            //    $friends = array("Димас", "Игорь", "Владос", "Колюпаха");
+            $friends = ["Димас", "Игорь", "Владос", "Колюпаха", 1, false];
+            $fish = ["new"=>"yellow", "old"=>"green", "river"=>"grey"];
+
+            ?>
+            <pre><?php
+                # Вывод массива через функцию var_dump()
+                var_dump($friends);
+
+                # Вывод элемента массива по индексу
+                echo $friends[1];
+                echo "<br><br>";
+
+                # Добавление/удаление элементов массива
+                $friends[6] = "Каркасы";
+                unset($friends[2]);
+                $friends[100] = "Олег";
+
+                var_dump($friends);
+                echo "<br>";
+
+                # Вывод ассоциативного массива
+                var_dump($fish);
+                echo "<br>";
+                echo $fish["river"] . "<br>";
+
+                $fish["river"] = "nice"; // Изменение элемента массива
+                echo $fish["river"][0] . "<br><br>"; // Вывод символа строки по индексу
+
+                # Расчёт количества элементов массива
+                echo "Количество элементов массива \$fish - " . count($fish);
+
+                ?></pre>
+        </div>
     </section>
 </main>
 </body>

@@ -31,7 +31,7 @@
             <li><a href="l14.php">POST vs GET</a></li>
             <li><a href="l15.php">Arrays</a></li>
             <li><a href="l16.php">Using Checkboxes</a></li>
-            <li><a href="l17.php">Associative Arrays</a></li>
+            <li class="selected"><a href="l17.php">Associative Arrays</a></li>
             <li><a href="l18.php">Functions</a></li>
             <li><a href="l19.php">Return Statements</a></li>
             <li><a href="l20.php">If Statements</a></li>
@@ -54,10 +54,13 @@
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>Associative Arrays</h3>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+
+        </div>
     </section>
 </main>
 </body>
