@@ -26,7 +26,7 @@
             <li><a href="l09.php">Working With Numbers</a></li>
             <li><a href="l10.php">Getting User Input</a></li>
             <li><a href="l11.php">Building a Basic Calculator</a></li>
-            <li><a href="l12.php">Building a Mad Libs Game</a></li>
+            <li class="selected"><a href="l12.php">Building a Mad Libs Game</a></li>
             <li><a href="l13.php">URL Parameters</a></li>
             <li><a href="l14.php">POST vs GET</a></li>
             <li><a href="l15.php">Arrays</a></li>
@@ -54,10 +54,46 @@
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>Building a Mad Libs Game</h3>
+<pre>
+<span class="yellow">&lt;form <span class="grey">action= <span class="lightgreen">"l12.php"</span> method= <span class="lightgreen">"get"</span></span>&gt;</span>
+    <span class="grey">Color: <span class="yellow">&lt;br&gt;&lt;input</span> type=<span class="lightgreen">"text"</span> name=<span class="lightgreen">"color"</span></span><span class="yellow">&gt;&lt;br&gt;</span>
+    <span class="grey">Plural noun: <span class="yellow">&lt;br&gt;&lt;input</span> type=<span class="lightgreen">"text"</span> name=<span class="lightgreen">"noun"</span></span><span class="yellow">&gt;&lt;br&gt;</span>
+    <span class="grey">Verb: <span class="yellow">&lt;br&gt;&lt;input</span> type=<span class="lightgreen">"text"</span> name=<span class="lightgreen">"verb"</span></span><span class="yellow">&gt;&lt;br&gt;</span>
+    <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
+<span class="yellow">&lt;/form&gt;</span>
+
+<span class="orange">&lt;?php</span>
+    <span class="purple">$color<span class="grey"> = </span>$_GET<span class="grey">[<span class="green">"color"</span>]</span></span><span class="orange">;</span>
+    <span class="purple">$noun<span class="grey"> = </span>$_GET<span class="grey">[<span class="green">"noun"</span>]</span></span><span class="orange">;</span>
+    <span class="purple">$verb<span class="grey"> = </span>$_GET<span class="grey">[<span class="green">"verb"</span>]</span></span><span class="orange">;</span>
+
+    <span class="orange">echo <span class="green">"<span class="grey">roses are <span class="purple">$color</span></span>"</span><span class="grey"> . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
+    <span class="orange">echo <span class="green">"<span class="grey"><span class="purple">$noun</span> are blue</span>"</span><span class="grey"> . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
+    <span class="orange">echo <span class="green">"<span class="grey">I <span class="purple">$verb</span> you</span>"</span><span class="grey"> . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
+<span class="orange">?&gt;</span>
+</pre>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+            <form action="l12.php" method="get">
+                Color:<br><input type="text" name="color"><br>
+                Plural noun:<br><input type="text" name="noun"><br>
+                Verb:<br><input type="text" name="verb"><br>
+                <input type="submit">
+            </form>
+
+            <?php
+                $color = $_GET["color"];
+                $noun = $_GET["noun"];
+                $verb = $_GET["verb"];
+
+                echo "roses are $color" . "<br>";
+                echo "$noun are blue" . "<br>";
+                echo "I $verb you" . "<br>";
+            ?>
+        </div>
     </section>
 </main>
 </body>

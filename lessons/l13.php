@@ -27,7 +27,7 @@
             <li><a href="l10.php">Getting User Input</a></li>
             <li><a href="l11.php">Building a Basic Calculator</a></li>
             <li><a href="l12.php">Building a Mad Libs Game</a></li>
-            <li><a href="l13.php">URL Parameters</a></li>
+            <li class="selected"><a href="l13.php">URL Parameters</a></li>
             <li><a href="l14.php">POST vs GET</a></li>
             <li><a href="l15.php">Arrays</a></li>
             <li><a href="l16.php">Using Checkboxes</a></li>
@@ -54,10 +54,32 @@
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>URL Parameters</h3>
+<pre>
+<span class="yellow">&lt;form <span class="grey">action= <span class="lightgreen">"l13.php"</span> method= <span class="lightgreen">"get"</span></span>&gt;</span>
+    <span class="grey">Name: </span><span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"text"</span> name=<span class="lightgreen">"name"</span></span>&gt;</span>
+    <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;&lt;br&gt;&lt;br&gt;</span>
+<span class="yellow">&lt;/form&gt;</span>
+
+<span class="orange">&lt;?php</span>
+    <span class="orange">echo <span class="green">"<span class="grey">Name: </span>"</span><span class="grey"> . @<span class="purple">$_GET</span>[<span class="green">"name"</span>] . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
+    <span class="orange">echo <span class="green">"<span class="grey">Age: </span>"</span><span class="grey"> . @<span class="purple">$_GET</span>[<span class="green">"age"</span>] . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
+<span class="orange">?&gt;</span>
+</pre>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+            <form action="l13.php" method="get">
+                Name: <input type="text" name="name">
+                <input type="submit"><br><br>
+            </form>
+
+            <?php
+                echo "Name: " . @$_GET["name"] . "<br>";
+                echo "Age: " . @$_GET["age"] . "<br>";
+            ?>
+        </div>
     </section>
 </main>
 </body>

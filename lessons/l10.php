@@ -63,6 +63,7 @@
     <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"text"</span> name=<span class="lightgreen">"age"</span></span>&gt;&lt;br&gt;</span>
     <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
 <span class="yellow">&lt;/form&gt;</span>
+
 <span class="grey">Your username is </span><span class="orange">&lt;?php echo <span class="purple">$_GET<span class="grey">[<span class="green">"username"</span>]</span></span>; ?&gt;</span>
 <span class="grey">Your age is </span><span class="orange">&lt;?php echo <span class="purple">$_GET<span class="grey">[<span class="green">"age"</span>]</span></span>; ?&gt;</span>
 </pre>

@@ -54,10 +54,40 @@
         </div>
     </section>
     <section class="code">
-        <h3>Здесь отображается код</h3>
+        <h3>POST vs GET</h3>
+<pre>
+<span class="darkgrey">&lt!-- &lt;form action="l14.php" method="get"&gt; --&gt;</span>
+<span class="darkgrey">&lt!--     Password: &lt;input type="password" name="password"&gt; --&gt;</span>
+<span class="darkgrey">&lt!--     &lt;input type="submit"&gt; --&gt;</span>
+<span class="darkgrey">&lt!-- &lt;/form&gt; --&gt;</span>
+<span class="yellow">&lt;form <span class="grey">action= <span class="lightgreen">"l14.php"</span> method= <span class="lightgreen">"post"</span></span>&gt;</span>
+    <span class="grey">Password: <span class="yellow">&lt;input</span> type=<span class="lightgreen">"password"</span> name=<span class="lightgreen">"password"</span></span><span class="yellow">&gt;</span>
+    <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
+<span class="yellow">&lt;/form&gt;</span>
+
+<span class="orange">&lt;?php</span>
+    <span class="darkgrey">//    echo @$_GET["password"];</span>
+    <span class="orange">echo <span class="grey">@<span class="purple">$_POST</span>[<span class="green">"password"</span>]</span>;</span>
+<span class="orange ">?&gt;</span>
+</pre>
     </section>
     <section class="result">
-        <h3>Здесь отображается результат</h3>
+        <h3>http://localhost:4000</h3>
+        <div class="result-output">
+            <!--<form action="l14.php" method="get">-->
+            <!--    Password: <input type="password" name="password">-->
+            <!--    <input type="submit">-->
+            <!--</form>-->
+            <form action="l14.php" method="post">
+                Password: <input type="password" name="password">
+                <input type="submit">
+            </form>
+
+            <?php
+                //    echo @$_GET["password"];
+                echo @$_POST["password"];
+            ?>
+        </div>
     </section>
 </main>
 </body>

@@ -61,6 +61,7 @@
     <span class="grey">Number #2: <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"number"</span> name=<span class="lightgreen">"number2"</span></span><span class="yellow">&gt;&lt;br&gt;</span></span></span>
     <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
 <span class="yellow">&lt;/form&gt;</span>
+
 <span class="orange">&lt;?php <span class="purple">$result<span class="grey"> = </span>$_GET<span class="grey">[<span class="green">"number1</span>] + </span>$_GET<span class="grey">[<span class="green">"number2"</span>]</span></span> ?&gt;</span>
 <span class="grey">Result is <span class="orange">&lt;?= <span class="purple">$result</span>; ?&gt;</span></span>
 </pre>

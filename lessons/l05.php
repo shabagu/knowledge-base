@@ -61,8 +61,8 @@
 <span class="yellow">&lt;head&gt;</span>
     <span class="yellow">&lt;meta <span class="grey">charset<span class="lightgreen">="UTF-8"</span></span>&gt;</span>
     <span class="yellow">&lt;meta <span class="grey">name<span class="lightgreen">="viewport"</span></span>
-    <span class="grey">content<span class="lightgreen">="width=device-width, user-scalable=no, initial-scale=1.0,
-             maximum-scale=1.0, minimum-scale=1.0"</span></span></span>
+    <span class="grey">content<span class="lightgreen">="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"</span></span></span>
     <span class="yellow">&lt;meta <span class="grey">http-equiv<span class="lightgreen">="X-UA-Compatible"</span></span> <span class="grey">content<span class="lightgreen">="ie=edge"</span></span>&gt;</span>
     <span class="yellow">&lt;title&gt;<span class="grey">My Web Page</span>&lt;/title&gt;</span>
     <span class="yellow">&lt;link <span class="grey">rel<span class="lightgreen">="stylesheet"</span></span><span class="grey"> href<span class="lightgreen">="index.css"</span></span>&gt;</span>
