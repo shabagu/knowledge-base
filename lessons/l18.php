@@ -55,11 +55,30 @@
     </section>
     <section class="code">
         <h3>Functions</h3>
+<pre>
+<span class="orange">&lt;?php</span>
+    <span class="orange">function <span class="yellow">hi</span><span class="grey">(<span class="purple">$name</span><span class="orange">, </span><span class="purple">$age</span>) {</span></span>
+        <span class="orange">echo <span class="green">"<span class="grey">Hello, <span class="purple">$name</span>! You are <span class="purple">$age</span> years old! <span class="yellow">&lt;br&gt;</span></span>"</span>;</span>
+    <span class="grey">}</span>
+
+    <span class="orange"><span class="grey">hi(<span class="green">"Stas"</span><span class="orange">, </span><span class="green">"23"</span>)</span>;</span>
+    <span class="orange"><span class="grey">hi(<span class="green">"Ivan"</span><span class="orange">, </span><span class="green">"35"</span>)</span>;</span>
+    <span class="orange"><span class="grey">hi(<span class="green">"Oleg"</span><span class="orange">, </span><span class="green">"17"</span>)</span>;</span>
+<span class="orange">?&gt;</span>
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <?php
+                function hi($name, $age) {
+                    echo "Hello, $name! You are $age years old! <br>";
+                }
 
+                hi("Stas", "23");
+                hi("Ivan", "35");
+                hi("Oleg", "17");
+            ?>
         </div>
     </section>
 </main>
