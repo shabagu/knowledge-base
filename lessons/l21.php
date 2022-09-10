@@ -55,11 +55,82 @@
     </section>
     <section class="code">
         <h3>If Statements (con't)</h3>
+<pre>
+<span class="yellow">&lt;form <span class="grey">action=<span class="lightgreen">""</span></span>&gt;</span>
+    <span class="yellow">&lt;label&gt;<span class="grey">Number #1 </span>&lt;input <span class="grey">type=<span class="lightgreen">"number"</span></span> <span class="grey">name=<span class="lightgreen">"number1"</span></span>&gt;&lt;/label&gt;&lt;br&gt;</span>
+    <span class="yellow">&lt;label&gt;<span class="grey">Number #2 </span>&lt;input <span class="grey">type=<span class="lightgreen">"number"</span></span> <span class="grey">name=<span class="lightgreen">"number2"</span></span>&gt;&lt;/label&gt;&lt;br&gt;</span>
+    <span class="yellow">&lt;label&gt;<span class="grey">Number #3 </span>&lt;input <span class="grey">type=<span class="lightgreen">"number"</span></span> <span class="grey">name=<span class="lightgreen">"number3"</span></span>&gt;&lt;/label&gt;&lt;br&gt;</span>
+    <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
+<span class="yellow">&lt;/form&gt;</span>
+
+<span class="orange">&lt;?php</span>
+    <span class="orange">function <span class="yellow">findMaxOfThree<span class="grey">(<span class="orange"><span class="purple">$number1</span>, <span class="purple">$number2</span>, <span class="purple">$number3</span></span>) {</span></span></span>
+        <span class="orange">if <span class="grey">(<span class="purple">$number1</span> >= <span class="purple">$number2</span> && <span class="purple">$number1</span> >= <span class="purple">$number3</span>) {</span></span>
+            <span class="orange">return <span class="purple">$number1</span>;</span>
+        <span class="grey">} <span class="orange">elseif</span> (<span class="purple">$number2</span> >= <span class="purple">$number3</span>) {</span>
+            <span class="orange">return <span class="purple">$number2</span>;</span>
+        <span class="grey">} <span class="orange">else</span> {</span>
+            <span class="orange">return <span class="purple">$number3</span>;</span>
+        <span class="grey">}</span>
+    <span class="grey">}</span>
+
+    <span class="purple">$number1 <span class="grey">=</span> $_GET<span class="grey">[<span class="green">"number1"</span>]</span></span><span class="orange">;</span>
+    <span class="purple">$number2 <span class="grey">=</span> $_GET<span class="grey">[<span class="green">"number2"</span>]</span></span><span class="orange">;</span>
+    <span class="purple">$number3 <span class="grey">=</span> $_GET<span class="grey">[<span class="green">"number3"</span>]</span></span><span class="orange">;</span>
+
+    <span class="grey"><span class="orange">if</span> (<span class="orange">isset</span>(<span class="purple">$_GET</span>[<span class="green">"number1"</span>]) && <span class="orange">isset</span>(<span class="purple">$_GET</span>[<span class="green">"number2"</span>]) &&
+<span class="orange">isset</span>(<span class="purple">$_GET</span>[<span class="green">"number3"</span>])) {</span>
+        <span class="orange">echo <span class="green">"<span class="grey">Max number found by max() - </span>"
+<span class="grey">. max(</span></span><span class="purple">$number1</span>, <span class="purple">$number2</span>, <span class="purple">$number3</span><span class="grey">) . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
+        <span class="orange">echo <span class="green">"<span class="grey">Max number found by findMaxOfThree() - </span>"
+<span class="grey">. findMaxOfThree(</span></span><span class="purple">$number1</span>, <span class="purple">$number2</span>, <span class="purple">$number3</span><span class="grey">) . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
+    <span class="grey">}</span>
+
+    <span class="darkgrey"># >  - Больше</span>
+    <span class="darkgrey"># <  - Меньше</span>
+    <span class="darkgrey"># >= - Больше или равно</span>
+    <span class="darkgrey"># <= - Меньше или равно</span>
+    <span class="darkgrey"># == - Равно</span>
+    <span class="darkgrey"># != - Не равно</span>
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <form action="">
+                <label>Number #1 <input type="number" name="number1"></label><br>
+                <label>Number #2 <input type="number" name="number2"></label><br>
+                <label>Number #3 <input type="number" name="number3"></label><br>
+                <input type="submit">
+            </form>
 
+            <?php
+                function findMaxOfThree($number1, $number2, $number3) {
+                    if ($number1 >= $number2 && $number1 >= $number3) {
+                        return $number1;
+                    } elseif ($number2 >= $number3) {
+                        return $number2;
+                    } else {
+                        return $number3;
+                    }
+                }
+
+                $number1 = $_GET["number1"];
+                $number2 = $_GET["number2"];
+                $number3 = $_GET["number3"];
+
+                if (isset($_GET["number1"]) && isset($_GET["number2"]) && isset($_GET["number3"])) {
+                    echo "Max number found by max() - " . max($number1, $number2, $number3) . "<br>";
+                    echo "Max number found by findMaxOfThree() - " . findMaxOfThree($number1, $number2, $number3) . "<br>";
+                }
+
+                # >  - Больше
+                # <  -  Меньше
+                # >= - Больше или равно
+                # <= - Меньше или равно
+                # == - Равно
+                # != - Не равно
+            ?>
         </div>
     </section>
 </main>

@@ -76,10 +76,10 @@
         <span class="orange">echo <span class="green">"You are neither gay or old"</span>;</span>
     <span class="grey">}</span>
 
-    <span class="darkgrey"># &&, and - logical and</span>
-    <span class="darkgrey"># ||, or - logical or</span>
-    <span class="darkgrey"># ! - logical negation</span>
-    <span class="darkgrey"># xor - exclusive or</span>
+    <span class="darkgrey"># &&, and - Логическое И</span>
+    <span class="darkgrey"># ||, or  - Логическое ИЛИ</span>
+    <span class="darkgrey"># xor     - Исключающее ИЛИ</span>
+    <span class="darkgrey"># !       - Логическое отрицание</span>
 
     <span class="darkgrey"># 0 xor 0 = 0</span>
     <span class="darkgrey"># 0 xor 1 = 1</span>
@@ -110,10 +110,10 @@
                     echo "You are neither gay or old";
                 }
 
-                # &&, and - logical and
-                # ||, or - logical or
-                # ! - logical negation
-                # xor - exclusive or
+                # &&, and - Логическое И
+                # ||, or  - Логическое ИЛИ
+                # xor     - Исключающее ИЛИ
+                # !       - Логическое отрицание
 
                 # 0 xor 0 = 0
                 # 0 xor 1 = 1
