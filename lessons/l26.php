@@ -55,11 +55,60 @@
     </section>
     <section class="code">
         <h3>Comments</h3>
+<pre>
+<span class="orange">&lt;?php</span>
+
+    <span class="darkgrey">// comment (style #1)</span>
+
+    <span class="darkgrey"># comment (style #2)</span>
+
+    <span class="darkgrey">/* comment (style #2) */</span>
+
+    <span class="darkgrey">/*</span>
+    <span class="darkgrey"> * multiline</span>
+    <span class="darkgrey"> * comment</span>
+    <span class="darkgrey"> * (comment block)</span>
+    <span class="darkgrey"> * can only be used with third style comment</span>
+    <span class="darkgrey"> */</span>
+
+    <span class="darkgrey">// describing line of code #1</span>
+    <span class="orange">echo <span class="green">"something"</span>;</span><span class="darkgrey">// describing line of code #2</span>
+
+    <span class="darkgrey">// excluding line of code from execution</span>
+    <span class="darkgrey">// echo "byak";</span>
+
+    <span class="darkgrey">// to%do (without %) - for IDE</span>
+
+<span class="orange">?&gt;</span>
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <?php
 
+                // comment (style #1)
+
+                # comment (style #2)
+
+                /* comment (style #3) */
+
+                /*
+                 * multiline
+                 * comment
+                 * (comment block)
+                 * can only be used with third style comment
+                 */
+
+                // describing line of code #1
+                echo "something"; // describing line of code #2
+
+                // excluding line of code from execution
+                // echo "byak";
+
+                // to%do (without %) - for IDE
+
+            ?>
         </div>
     </section>
 </main>
