@@ -55,11 +55,48 @@
     </section>
     <section class="code">
         <h3>While Loops</h3>
+<pre>
+<span class="orange">&lt;?php</span>
+    <span class="purple">$i <span class="grey">= <span class="blue">1<span class="orange">;</span></span></span></span>
+
+    <span class="orange">while <span class="grey">(<span class="purple">$i</span> <= <span class="blue">23</span>) {</span></span>
+        <span class="purple">$i<span class="grey">++<span class="orange">;</span></span></span>
+        <span class="orange">echo <span class="green">"<span class="purple">$i <span class="yellow">&lt;br&gt;</span></span>"</span>;</span>
+        <span class="purple">$i<span class="grey"> += <span class="blue">10</span><span class="orange">;</span></span></span>
+        <span class="orange">echo <span class="green">"<span class="purple">$i <span class="yellow">&lt;br&gt;</span></span>"</span>;</span>
+    <span class="grey">}</span>
+
+    <span class="orange">echo <span class="green">"<span class="yellow">&lt;hr&gt;</span>"</span>;</span>
+
+    <span class="purple">$j <span class="grey">= <span class="blue">200</span></span><span class="orange">;</span></span>
+
+    <span class="orange">do <span class="grey">{</span></span>
+        <span class="orange">echo <span class="green">"<span class="purple">$j <span class="yellow">&lt;br&gt;</span></span>"</span>;</span>
+    <span class="grey">} <span class="orange">while</span>(<span class="purple">$j </span>< <span class="blue">100</span>)</span>
+<span class="orange">?&gt;</span>
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <?php
+                $i = 1;
 
+                while ($i <= 23) {
+                    $i++;
+                    echo "$i <br>";
+                    $i += 10;
+                    echo "$i <br>";
+                }
+
+                echo "<hr>";
+
+                $j = 200;
+
+                do {
+                    echo "$j <br>";
+                } while ($j < 100)
+            ?>
         </div>
     </section>
 </main>

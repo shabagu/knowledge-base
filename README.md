@@ -24,10 +24,10 @@ Course lessons:
 18. ✅ (2:04:55) Functions
 19. ✅ (2:12:10) Return Statements
 20. ✅ (2:19:10) If Statements
-21. ❌ (2:37:16) If Statements (con't)
-22. ❌ (2:47:13) Building a Better Calculator
-23. ❌ (2:56:53) Switch Statements
-24. ❌ (3:05:09) While Loops
+21. ✅ (2:37:16) If Statements (con't)
+22. ✅ (2:47:13) Building a Better Calculator
+23. ✅ (2:56:53) Switch Statements
+24. ✅ (3:05:09) While Loops
 25. ❌ (3:15:18) For Loops
 26. ❌ (3:26:24) Comments
 27. ❌ (3:31:08) Including HTML

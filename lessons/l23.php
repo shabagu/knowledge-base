@@ -55,11 +55,90 @@
     </section>
     <section class="code">
         <h3>Switch Statements</h3>
+<pre>
+<span class="yellow">&lt;form <span class="grey">action=<span class="lightgreen">"l23.php</span> method=<span class="lightgreen">"post"</span></span>&gt;</span>
+    <span class="yellow">&lt;label&gt;</span><span class="grey"> What is your rank?</span>
+        <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"text"</span> name=<span class="lightgreen">"score"</span></span>&gt;</span>
+    <span class="yellow">&lt;/label&gt;</span>
+    <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
+<span class="yellow">&lt;/form&gt;</span>
+
+<span class="orange">&lt;?php</span>
+    <span class="purple">$score <span class="grey">= </span>$_POST<span class="grey">[<span class="green">"score"</span>]</span></span><span class="orange">;</span>
+
+    <span class="orange">switch <span class="grey">(<span class="purple">$score</span>) {</span></span>
+        <span class="orange">case</span><span class="green"> "E"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Better luck next time!"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">case</span><span class="green"> "D"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Very bad"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">case</span><span class="green"> "C"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Not so good"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">case</span><span class="green"> "B"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Not bad"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">case</span><span class="green"> "A"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Well done!"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">case</span><span class="green"> "A+"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Incredible! You get really high score!"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">case</span><span class="green"> "S"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Wow! You are amazing!"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">case</span><span class="green"> "S+"</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"ez"</span>;</span>
+            <span class="orange">break;</span>
+        <span class="orange">default</span><span class="grey">:</span>
+            <span class="orange">echo <span class="green">"Enter valid score!"</span>;</span>
+    <span class="grey">}</span>
+<span class="orange">?&gt;</span>
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <form action="l23.php" method="post">
+                <label> What is your rank?
+                    <input type="text" name="score">
+                </label>
+                <input type="submit">
+            </form>
 
+            <?php
+                $score = $_POST["score"];
+
+                switch ($score) {
+                    case "E":
+                        echo "Better luck next time!";
+                        break;
+                    case "D":
+                        echo "Very bad";
+                        break;
+                    case "C":
+                        echo "Not so good";
+                        break;
+                    case "B":
+                        echo "Not bad";
+                        break;
+                    case "A":
+                        echo "Well done!";
+                        break;
+                    case "A+":
+                        echo "Incredible! You get really high score!";
+                        break;
+                    case "S" :
+                        echo "Wow! You are amazing!";
+                        break;
+                    case "S+" :
+                        echo "ez";
+                        break;
+                    default:
+                        echo "Enter valid score!";
+                }
+            ?>
         </div>
     </section>
 </main>
