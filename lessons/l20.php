@@ -55,11 +55,71 @@
     </section>
     <section class="code">
         <h3>If Statements</h3>
+<pre>
+<span class="yellow">&lt;form <span class="grey">action=<span class="lightgreen">""</span></span>&gt;</span>
+    <span class="yellow">&lt;label&gt;<span class="grey">Gay</span>&lt;input<span class="grey"> type=<span class="lightgreen">"checkbox"</span> name=<span class="lightgreen">"gay"</span></span>&gt;&lt;/label&gt;</span>
+    <span class="yellow">&lt;label&gt;<span class="grey">Old</span>&lt;input<span class="grey"> type=<span class="lightgreen">"checkbox"</span> name=<span class="lightgreen">"old"</span></span>&gt;&lt;/label&gt;</span>
+    <span class="yellow">&lt;input <span class="grey">type=<span class="lightgreen">"submit"</span></span>&gt;</span>
+<span class="yellow">&lt;/form&gt;</span>
+
+<span class="orange">&lt;?php</span>
+    <span class="purple">$isGay</span><span class="grey"> = </span><span class="purple">$_GET<span class="grey">[<span class="green">"gay"</span>]</span></span><span class="orange">;</span>
+    <span class="purple">$isOld</span><span class="grey"> = </span><span class="purple">$_GET<span class="grey">[<span class="green">"old"</span>]</span></span><span class="orange">;</span>
+
+    <span class="orange">if <span class="grey">(<span class="purple">$isGay</span> && <span class="purple">&isOld</span>) {</span></span>
+        <span class="orange">echo <span class="green">"You are an old gay"</span>;</span>
+    <span class="grey">} </span><span class="orange">elseif <span class="grey">(<span class="purple">$isGay</span> && !<span class="purple">&isOld</span>) {</span></span>
+        <span class="orange">echo <span class="green">"You are a young gay"</span>;</span>
+    <span class="grey">} </span><span class="orange">elseif <span class="grey">(!<span class="purple">$isGay</span> && <span class="purple">&isOld</span>) {</span></span>
+        <span class="orange">echo <span class="green">"You are old and not gay"</span>;</span>
+    <span class="grey">} <span class="orange">else</span> {</span>
+        <span class="orange">echo <span class="green">"You are neither gay or old"</span>;</span>
+    <span class="grey">}</span>
+
+    <span class="darkgrey"># &&, and - logical and</span>
+    <span class="darkgrey"># ||, or - logical or</span>
+    <span class="darkgrey"># ! - logical negation</span>
+    <span class="darkgrey"># xor - exclusive or</span>
+
+    <span class="darkgrey"># 0 xor 0 = 0</span>
+    <span class="darkgrey"># 0 xor 1 = 1</span>
+    <span class="darkgrey"># 1 xor 0 = 1</span>
+    <span class="darkgrey"># 1 xor 1 = 0</span>
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <form action="">
+                <label>Gay<input type="checkbox" name="gay"></label>
+                <label>Old<input type="checkbox" name="old"></label>
+                <input type="submit">
+            </form>
 
+            <?php
+                $isGay = $_GET["gay"];
+                $isOld = $_GET["old"];
+
+                if ($isGay && $isOld) {
+                    echo "You are an old gay";
+                } elseif ($isGay && !$isOld) {
+                    echo "You are a young gay";
+                } elseif (!$isGay && $isOld) {
+                    echo "You are old and not gay";
+                } else {
+                    echo "You are neither gay or old";
+                }
+
+                # &&, and - logical and
+                # ||, or - logical or
+                # ! - logical negation
+                # xor - exclusive or
+
+                # 0 xor 0 = 0
+                # 0 xor 1 = 1
+                # 1 xor 0 = 1
+                # 1 xor 1 = 0
+            ?>
         </div>
     </section>
 </main>
