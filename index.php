@@ -8,14 +8,8 @@
     <title>selflearn (php)</title>
 </head>
 <body>
-<?php
-    function hello($name, $age) {
-        echo "Hello, $name! You are $age)))<br>";
-    }
-
-    hello("Stas", "23");
-    hello("Ivan", "35");
-    hello("Oleg", "17");
-?>
+<ol>
+    <li><a href="/lessons/">freeCodeCamp PHP course</a></li>
+</ol>
 </body>
 </html>

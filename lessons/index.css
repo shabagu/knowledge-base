@@ -31,7 +31,9 @@ section.code {
     min-height: calc(100vh - 80px);
     padding: 20px;
     margin-left: 20%;
-    background: #2b2b2b;
+    /*background: #2b2b2b;*/
+    background: #232525;
+
 }
 
 section.result {

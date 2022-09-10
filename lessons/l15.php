@@ -68,7 +68,7 @@
     <span class="grey">var_dump(<span class="purple">$friends</span>)</span><span class="orange">;</span>
 
     <span class="darkgrey"># Вывод элемента массива по индексу</span>
-    <span class="orange">echo <span class="purple">$friends <span class="grey">[<span class="blue">1</span>]</span></span>;</span>
+    <span class="orange">echo <span class="purple">$friends<span class="grey">[<span class="blue">1</span>]</span></span>;</span>
     <span class="orange">echo <span class="green">"<span class="yellow">&lt;br&gt;&lt;br&gt;</span>"</span>;</span>
 
     <span class="darkgrey"># Добавление/удаление элементов массива</span>

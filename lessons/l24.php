@@ -71,6 +71,7 @@
     <span class="purple">$j <span class="grey">= <span class="blue">200</span></span><span class="orange">;</span></span>
 
     <span class="orange">do <span class="grey">{</span></span>
+        <span class="purple">$j<span class="grey">++<span class="orange">;</span></span></span>
         <span class="orange">echo <span class="green">"<span class="purple">$j <span class="yellow">&lt;br&gt;</span></span>"</span>;</span>
     <span class="grey">} <span class="orange">while</span>(<span class="purple">$j </span>< <span class="blue">100</span>)</span>
 <span class="orange">?&gt;</span>
@@ -94,6 +95,7 @@
                 $j = 200;
 
                 do {
+                    $j++;
                     echo "$j <br>";
                 } while ($j < 100)
             ?>

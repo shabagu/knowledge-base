@@ -55,11 +55,44 @@
     </section>
     <section class="code">
         <h3>For Loops</h3>
+<pre>
+<span class="orange">&lt;?php</span>
+    <span class="orange">for <span class="grey">(<span class="purple">$i</span> = <span class="blue">1</span><span class="oramge">; </span><span class="purple">$i</span> <= <span class="blue">7</span><span class="oramge">; </span><span class="purple">$i</span>++) {</span></span>
+        <span class="orange">echo <span class="green">"<span class="purple">$i <span class="yellow">&lt;br&gt;</span></span>"</span>;</span>
+    <span class="grey">}</span>
+
+    <span class="orange">echo <span class="green">"<span class="yellow">&lt;hr&gt;</span>"</span>;</span>
+
+    <span class="purple">$numbers <span class="grey">= [<span class="orange"><span class="blue">10</span>, <span class="blue">40</span>, <span class="blue">3.333</span>, <span class="blue">25</span>, <span class="blue">1e6</span></span>]</span><span class="orange">;</span></span>
+
+    <span class="orange">for <span class="grey">(<span class="purple">$i</span> = <span class="blue">0</span><span class="orange">; </span><span class="purple">$i</span> < count(<span class="purple">$numbers</span>)<span class="orange">; </span><span class="purple">$i</span>++) {</span></span>
+        <span class="darkgrey"># Используем &lt;, а не &lt;= т.к. count($numbers) возвращает 5,</span>
+        <span class="darkgrey"># а элементы массива $numbers имеют индексы от [0] до [4]</span>
+
+        <span class="orange">echo <span class="green">"<span class="purple">$numbers<span class="grey">[<span class="purple">$i</span>] </span><span class="yellow">&lt;br&gt;</span></span>"</span>;</span>
+    <span class="grey">}</span>
+<span class="orange">?&gt;</span>
+
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <?php
+                for ($i = 1; $i <= 7; $i++) {
+                    echo "$i <br>";
+                }
 
+                echo "<hr>";
+
+                $numbers = [10, 40, 3.333, 25, 1e6];
+                for ($i = 0; $i < count($numbers); $i++) {
+                    # Используем <, а не <= т.к. count($numbers) возвращает 5,
+                    # а элементы массива $numbers имеют индексы от [0] до [4]
+
+                    echo "$numbers[$i] <br>";
+                }
+            ?>
         </div>
     </section>
 </main>
