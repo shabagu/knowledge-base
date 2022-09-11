@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PHP (freeCodeCamp)</title>
+    <title>freecodecamp-php-course</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="icon" href="../favicon.svg">
 </head>
@@ -55,11 +55,39 @@
     </section>
     <section class="code">
         <h3>Including HTML</h3>
+        <hr>
+        <span class="file">header.html</span>
+        <hr>
+<pre>
+<span class="yellow">&lt;h1&gt;<span class="grey">Welcome to my cool website!</span>&lt;/h1&gt;</span>
+<span class="yellow">&lt;hr&gt;</span><br>
+</pre>
+        <hr>
+        <span class="file">footer.html</span>
+        <hr>
+<pre>
+<span class="yellow">&lt;hr&gt;</span>
+<span class="yellow">&lt;h3&gt;<span class="grey">Thanks for visiting!</span>&lt;/h3&gt;</span><br>
+</pre>
+        <hr>
+        <span class="file">index.php</span>
+        <hr>
+<pre>
+<span class="orange">&lt;?php include <span class="green">"header.html"</span> ?&gt;</span>
+
+<span class="yellow">&lt;p&gt;<span class="grey">Hello, world!</span>&lt;/p&gt;</span>
+
+<span class="orange">&lt;?php include <span class="green">"footer.html"</span> ?&gt;</span>
+</pre>
     </section>
     <section class="result">
         <h3>http://localhost:4000</h3>
         <div class="result-output">
+            <?php include "header.html" ?>
 
+            <p>Hello, world!</p>
+
+            <?php include "footer.html" ?>
         </div>
     </section>
 </main>

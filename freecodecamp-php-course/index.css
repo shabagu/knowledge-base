@@ -70,6 +70,10 @@ section.description h3 {
     text-align: left;
 }
 
+.result-output h3 {
+    text-align: left;
+}
+
 section.list ol, section.list a {
     color: #fff;
     text-decoration: none;
@@ -153,4 +157,8 @@ span.blue {
 }
 span.darkgrey {
     color: #757f76;
+}
+
+span.file {
+    color: #fff;
 }
