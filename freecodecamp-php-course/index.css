@@ -162,3 +162,13 @@ span.darkgrey {
 span.file {
     color: #fff;
 }
+
+span.phpdoc {
+    font-style: italic;
+    color: #698245;
+}
+
+span.phpdoc-var {
+    text-decoration: underline;
+    font-weight: 900;
+}

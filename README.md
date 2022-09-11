@@ -31,7 +31,7 @@ Course lessons:
 25. ✅ (3:15:18) For Loops
 26. ✅ (3:26:24) Comments
 27. ✅ (3:31:08) Including HTML
-28. ❌ (3:36:51) Include: PHP
+28. ✅ (3:36:51) Include: PHP
 29. ❌ (3:45:57) Classes & Objects
 30. ❌ (3:56:23) Constructors
 31. ❌ (4:06:18) Object Functions
