@@ -9,7 +9,7 @@
 </head>
 <body>
 <ol>
-    <li><a href="/lessons/">freeCodeCamp PHP course</a></li>
+    <li><a href="/freecodecamp-php-course/index.php">freecodecamp-php-course</a></li>
 </ol>
 </body>
 </html>
