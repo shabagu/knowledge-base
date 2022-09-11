@@ -85,6 +85,7 @@
     <span class="darkgrey"># 0 xor 1 = 1</span>
     <span class="darkgrey"># 1 xor 0 = 1</span>
     <span class="darkgrey"># 1 xor 1 = 0</span>
+<span class="orange">?&gt;</span>
 </pre>
     </section>
     <section class="result">

@@ -86,12 +86,16 @@
 <span class="grey">. findMaxOfThree(</span></span><span class="purple">$number1</span>, <span class="purple">$number2</span>, <span class="purple">$number3</span><span class="grey">) . <span class="green">"<span class="yellow">&lt;br&gt;</span>"</span></span>;</span>
     <span class="grey">}</span>
 
-    <span class="darkgrey"># >  - Больше</span>
-    <span class="darkgrey"># <  - Меньше</span>
-    <span class="darkgrey"># >= - Больше или равно</span>
-    <span class="darkgrey"># <= - Меньше или равно</span>
-    <span class="darkgrey"># == - Равно</span>
-    <span class="darkgrey"># != - Не равно</span>
+    <span class="darkgrey"># >      - Больше</span>
+    <span class="darkgrey"># <      - Меньше</span>
+    <span class="darkgrey"># >=     - Больше или равно</span>
+    <span class="darkgrey"># <=     - Меньше или равно</span>
+    <span class="darkgrey"># ==     - Равно</span>
+    <span class="darkgrey"># !=, <> - Не равно</span>
+    <span class="darkgrey"># ===    - Тождественно равно (равны значение и тип)</span>
+    <span class="darkgrey"># !==    - Тождественно не равно (не равно значение или тип)</span>
+    <span class="darkgrey"># <=>    - spaceship (возвращает -1, 0 или 1)</span>
+<span class="orange">?&gt;</span>
 </pre>
     </section>
     <section class="result">
@@ -124,12 +128,15 @@
                     echo "Max number found by findMaxOfThree() - " . findMaxOfThree($number1, $number2, $number3) . "<br>";
                 }
 
-                # >  - Больше
-                # <  -  Меньше
-                # >= - Больше или равно
-                # <= - Меньше или равно
-                # == - Равно
-                # != - Не равно
+                # >      - Больше
+                # <      - Меньше
+                # >=     - Больше или равно
+                # <=     - Меньше или равно
+                # ==     - Равно
+                # !=, <> - Не равно
+                # ===    - Тождественно равно (равны значение и тип)
+                # !==    - Тождественно не равно (не равно значение или тип)
+                # <=>    - spaceship (возвращает -1, 0 или 1)
             ?>
         </div>
     </section>
