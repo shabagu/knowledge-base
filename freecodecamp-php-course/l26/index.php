@@ -62,7 +62,7 @@
 
     <span class="darkgrey"># comment (style #2)</span>
 
-    <span class="darkgrey">/* comment (style #2) */</span>
+    <span class="darkgrey">/* comment (style #3) */</span>
 
     <span class="darkgrey">/*</span>
     <span class="darkgrey"> * multiline</span>
@@ -77,7 +77,7 @@
     <span class="darkgrey">// excluding line of code from execution</span>
     <span class="darkgrey">// echo "byak";</span>
 
-    <span class="darkgrey">// to%do (without %) - for IDE</span>
+    <span class="darkgrey">// <span class="lightgreen">TODO</span> (<span class="lightgreen">todo</span>) for IDE</span>
 
 <span class="orange">?&gt;</span>
 </pre>
