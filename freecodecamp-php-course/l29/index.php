@@ -99,9 +99,8 @@
                 $book2->pages = 1178;
             ?>
 
-        <pre><?php var_dump($book1);?></pre>
-        <pre><?php var_dump($book2);?></pre>
-
+            <pre><?php var_dump($book1);?></pre>
+            <pre><?php var_dump($book2);?></pre>
 
         </div>
     </section>
