@@ -36,4 +36,4 @@ Course lessons:
 30. ✅ (3:56:23) Constructors
 31. ✅ (4:06:18) Object Functions
 32. ✅ (4:13:52) Getters & Setters
-33. ❌ (4:29:17) Inheritance
+33. ✅ (4:29:17) Inheritance
