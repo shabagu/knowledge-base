@@ -23,7 +23,6 @@ section.list {
     width: 20%;
     background: #676a6d;
     overflow-y: auto;
-
 }
 
 section.code {
@@ -92,7 +91,7 @@ section.list li.selected, section.list li.selected a {
 }
 
 section.list .source-link {
-    margin: 0 0 7px 14px;
+    margin: 0 0 40px 14px;
     font-weight: bold;
 }
 section.list .source-link a:hover {
