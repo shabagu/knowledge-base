@@ -50,7 +50,7 @@
             <li><a href="../l33/index.php">Inheritance</a></li>
         </ol>
         <div class="source-link">
-            <a href="https://www.youtube.com/watch?v=OK_JCtrrv-c" target="_blank">* Видео-источник</a>
+            <a href="https://www.youtube.com/watch?v=OK_JCtrrv-c" target="_blank">* Источник</a>
         </div>
     </section>
     <section class="code">
